@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> sticky</title>
+   <style>
+       .container {
+           height: 2000px; /*height: alto */
+         
+       }
+
+       header {
+           height: 50px;
+           background-color: #332424;
+           position: sticky; /* el posicionamiento pegajoso */
+           top: 0;
+           color: antiquewhite;
+           z-index: 999; /* Capa z para controlar el apilamiento de elementos */
+       }
+
+       main {
+           margin-top: 50px; /* Para dejar espacio debajo del encabezado fijo */
+       }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+       <header>
+
+           <h1>Encabezado Sticky</h1>
+       </header>
+      
+       <main>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum ex sed nisi aliquam, eu
+               sollicitudin odio volutpat. Nam cursus, mauris sed finibus pulvinar, nunc odio dignissim nunc, id
+               malesuada erat est ut nisl. Etiam rhoncus lorem ut metus efficitur aliquet.</p>
+           <p>Donec vel velit quam. Sed eu scelerisque risus. Sed posuere congue tristique. Nullam dapibus metus id
+               nisi efficitur, non dapibus arcu varius. Sed condimentum eleifend nunc eget consectetur. Curabitur
+               commodo nulla nec erat auctor vulputate. Curabitur condimentum justo nec mi rutrum, at facilisis
+               lectus pulvinar. Aliquam vestibulum, risus at ultrices luctus, velit felis gravida metus, vel
+               lobortis velit velit ut purus.</p>
+           <p>Etiam tempus, nulla at pulvinar dapibus, lorem nibh eleifend orci, a pellentesque erat quam sed ipsum.
+               Suspendisse in ex augue. Integer consequat arcu vel metus rutrum, non consectetur felis vestibulum.
+               Vivamus bibendum, dui in ultricies mattis, sapien sem eleifend orci, ac euismod risus risus et metus.
+               In vel enim et ligula consequat eleifend. Sed ut eros convallis, feugiat sapien eget, sagittis velit.
+               Sed tincidunt pretium turpis. Aenean iaculis massa id diam dapibus, non consectetur arcu auctor.</p>
+       </main>
+   </div>
+</body>
+
+</html>
+<!--
+   1 ¿Cuál es la diferencia principal entre position relative y position absolute?
+   - que el bo se va desplazar a su posicion original en cambio position absolute elimina el flujo normal del elemento y se pocisiona a su elemento par
+   2¿Qué valor de position se utiliza por defecto para los elementos HTML?
+   - en el sticky
+   3¿Qué propiedad se utiliza para establecer la capa de apilamiento de elementos superpuestos?
+   - z-index
+   4 ¿Cuándo se utiliza position fixed en CSS?
+   -cuando se requiere un elemento en particular 
+   5¿Cómo se comporta un elemento con position sticky al desplazarse? 
+   -que se compartan como un position relative hasta el punto que se tiene que quedar pegado
+   6¿Cuál es el valor de position adecuado para un elemento que se desea que siga el flujo normal del documento?
+   -static
+   7¿Cuál es la forma más común de mover un elemento con position relative?
+    -
+    8¿En qué casos se puede utilizar z-index para controlar el orden de apilamiento de elementos?  
+    -para que no se superpongan los elementos
+    9¿Qué sucede cuando dos elementos tienen el mismo valor de z-index? Prueba su resultado y responde.
+    -el ultimo que se enridisa es el que va a quedar mas arriba 
+    10-¿Cuál es la principal diferencia entre position sticky y position fixed?
+    - uno se mueve y el otro no
+   11 En el siguiente ejemplo, ¿el valor top y right es en relación a qué elemento?
+   -
+    12-En el ejemplo anterior ¿qué agregarías para que la caja hija esté dentro de la caja padre?
+    -agregar una posicion relativa al container
+
+
+
+
+
+  
+
+-->
