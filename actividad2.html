@@ -6,74 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tp8 actividad2</title>
     <style>
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin:0px;
-            background-color: #C963C4FF;
-        }
-
-        .h5 {
-            background-color: #C963C4FF;
-            color: white;
-            text-shadow: black 2px -1px;
-        }
-        .p{
-            font-weight: 900;
-            color:white;
-
-        }
-        .button{
-            justify-content: left;
-            align-items: center;
-            margin-top: 15px;
-            margin-left: 10px;
-            background-color: transparent;
-            color:#C963C4FF;
-            border-color: #C963C4FF;
-            padding: 3px 20px;
-        } 
-        .boxblanco{
-            width: 500px;
+        .producto {
             height: 200px;
-        }
-        .box1{
-            display: flex;
+            width: 400px;
+            border: 2px solid #000;
             position: relative;
-            gap: 50px;
-        
+            display: flex;
+            gap: 40px;
         }
-        
 
+        /* caja de procto*/
+        .izq {
+            width: 25%;
+            height: 100%;
+        }
+
+        .color-uno {
+            background-color: #C963C4FF;
+        }
+
+        button {
+            border: 1px solid rgb(114, 0, 206);
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 8px;
+            color: rgb(114, 0, 206);
+            background-color: transparent;
+        }
+        .img-flotante{
+            position:absolute;
+            top:5%;
+            left:5px;
+        }
+        .caja {
+            height: 200px;
+            width: 400px;
+            display: flex;
+            gap: 40px;
+            border: 2px solid #000;
+            position: relative;
+            
+        }
+        .dere{
+            width: 25%;
+            height: 100%;
+        }
+        .color-dos {
+            background-color: #C963C4FF;
+        }
+
+        button{
+            border: 1px solid rgb(114, 0, 206);
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 8px;
+            color: rgb(114, 0, 206);
+            background-color: transparent;
+        }
+        .img-flotante2{
+            position:absolute;
+            top:5%;
+            left:5px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="box1">
-            <div>
-               
+
+        <div class="producto">
+            <div class="izq color-uno">
+
             </div>
-            <div>
-                <img src="./assets/img/ribbon.png" alt="cajas" width="100" height="100">
+
+            <div class="img-flotante">
+                <img src="./assets/img/ribbon.png" class="imagen" width="100" height="100">
             </div>
-            <div>
-                <div class="boxblanco">
-                    <h5>DESCUBRIR</h5>
+            <div class="der">
+                <div class="titulo"> <h2><span>DESCUBRILAS</span></h2> </div>
+                <div>no te pierdas las mejores ofertas al precio mas bajo mejor precio</div>
+                <div class="caja-boton">
+                    <button>ver mas aqui</button>
                 </div>
-                <div>
-                    <p> no te pierdas las mejores ofertas <br>al mejor precio</p>
-                </div>
-                <div>
-                    <button> ver mas aqui</button>
-                </div>
+
             </div>
+
+        </div>
+        <div class="caja">
+            <div class="dere color-dos">
+
+            </div>
+
+            <div class="img-flotante2">
+                <img src="./assets/img/interior-design.png" class="imagen" width="90" height="90">
+            </div>
+            <div class="der">
+                <div class="titulo"> <h2><span>FRAVEGA EN CASA</span></h2> </div>
+                <div>HASTA 40% OFF en colchones,muebles y articulos de decoracion seleccionados</div>
+                <div class="caja-boton">
+                    <button>ver mas aqui</button>
+                </div>
+
+            </div>
+
         </div>
 
 
     </div>
+    
 
 
 
